@@ -4,68 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Portal</title>
+
+    <!-- Part 7: CSS is in the separate file style.css -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Part 2: Header and navigation -->
     <header>
         <h1>Student Portal</h1>
-
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#profile">Profile</a>
-            <a href="#courses">Courses</a>
-            <a href="#register">Register</a>
-        </nav>
     </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#profile">Profile</a>
+        <a href="#courses">Courses</a>
+        <a href="#register">Register</a>
+    </nav>
 
     <main>
 
+        <!-- Home -->
         <section id="home">
             <h2>Welcome to Student Portal</h2>
-            <p>Welcome to the student portal. Here you can view student information, skills, schedule and register for courses.</p>
+            <p>Here you can view your profile, skills and weekly schedule, and register for a course.</p>
         </section>
 
+        <!-- Part 3: Student profile -->
         <section id="profile">
             <h2>Student Profile</h2>
 
             <table>
-                <tr>
-                    <th>Field</th>
-                    <th>Value</th>
-                </tr>
-
-                <tr>
-                    <td>Name</td>
-                    <td id="student-name">Rahul Sharma</td>
-                </tr>
-
-                <tr>
-                    <td>Student ID</td>
-                    <td>24BCE1001</td>
-                </tr>
-
-                <tr>
-                    <td>Program</td>
-                    <td class="highlight">Computer Science</td>
-                </tr>
-
-                <tr>
-                    <td>Year</td>
-                    <td>1st Year</td>
-                </tr>
-
-                <tr>
-                    <td>Email</td>
-                    <td>
-                        <a href="mailto:rahul@example.com">rahul@example.com</a>
-                    </td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th scope="col">Field</th>
+                        <th scope="col">Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Name</th>
+                        <td>
+                            <span id="student-name">Rahul Sharma</span>
+                            <span class="badge">Top Performer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Student ID</th>
+                        <td>24BCE1001</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Program</th>
+                        <td class="highlight">Computer Science</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Year</th>
+                        <td>1st Year</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Email</th>
+                        <td><a href="mailto:rahul@example.com">rahul@example.com</a></td>
+                    </tr>
+                </tbody>
             </table>
         </section>
 
-        <section>
+        <!-- Part 4: Skills -->
+        <section id="skills">
             <h2>My Skills</h2>
 
             <ul>
@@ -77,54 +83,55 @@
             </ul>
         </section>
 
+        <!-- Part 5: Weekly schedule -->
         <section id="courses">
             <h2>Weekly Schedule</h2>
 
             <table>
-                <tr>
-                    <th>Day</th>
-                    <th>9:00 AM</th>
-                    <th>11:00 AM</th>
-                    <th>2:00 PM</th>
-                </tr>
-
-                <tr>
-                    <td>Monday</td>
-                    <td>HTML</td>
-                    <td>Mathematics</td>
-                    <td>DSA</td>
-                </tr>
-
-                <tr>
-                    <td>Tuesday</td>
-                    <td>CSS</td>
-                    <td>DBMS</td>
-                    <td>English</td>
-                </tr>
-
-                <tr>
-                    <td>Wednesday</td>
-                    <td>JavaScript</td>
-                    <td>DSA</td>
-                    <td>Mathematics</td>
-                </tr>
-
-                <tr>
-                    <td>Thursday</td>
-                    <td>DBMS</td>
-                    <td>HTML</td>
-                    <td>Project</td>
-                </tr>
-
-                <tr>
-                    <td>Friday</td>
-                    <td>DSA</td>
-                    <td>CSS</td>
-                    <td>Workshop</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">9:00 AM</th>
+                        <th scope="col">11:00 AM</th>
+                        <th scope="col">2:00 PM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Monday</th>
+                        <td>HTML</td>
+                        <td>Mathematics</td>
+                        <td>DSA</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tuesday</th>
+                        <td>CSS</td>
+                        <td>DBMS</td>
+                        <td>English</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Wednesday</th>
+                        <td>JavaScript</td>
+                        <td>DSA</td>
+                        <td>Mathematics</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Thursday</th>
+                        <td>DBMS</td>
+                        <td>HTML</td>
+                        <td>Project</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Friday</th>
+                        <td>DSA</td>
+                        <td>CSS</td>
+                        <td>Workshop</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
 
+        <!-- Part 6: Course registration form -->
         <section id="register">
             <h2>Course Registration</h2>
 
@@ -132,58 +139,65 @@
 
                 <h3>Student Information</h3>
 
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
 
-                <br><br>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-
-                <br><br>
-
-                <label for="student-id">Student ID:</label>
-                <input type="text" id="student-id" name="student-id">
+                <p>
+                    <label for="student-id">Student ID:</label>
+                    <input type="text" id="student-id" name="student-id" required>
+                </p>
 
                 <h3>Course Selection</h3>
 
-                <label for="course">Select Course:</label>
-
-                <select id="course" name="course">
-                    <option value="">Select Course</option>
-                    <option value="html-css">HTML &amp; CSS</option>
-                    <option value="javascript">JavaScript</option>
-                    <option value="python">Python</option>
-                    <option value="data-structures">Data Structures</option>
-                    <option value="database">Database Management</option>
-                </select>
+                <p>
+                    <label for="course">Select Course:</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select Course</option>
+                        <option value="html-css">HTML &amp; CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="data-structures">Data Structures</option>
+                        <option value="database">Database Management</option>
+                    </select>
+                </p>
 
                 <h3>Preferred Learning Mode</h3>
 
-                <input type="radio" id="online" name="learning-mode" value="online">
-                <label for="online">Online</label>
+                <p>
+                    <input type="radio" id="online" name="learning-mode" value="online" required>
+                    <label for="online">Online</label>
 
-                <input type="radio" id="offline" name="learning-mode" value="offline">
-                <label for="offline">Offline</label>
+                    <input type="radio" id="offline" name="learning-mode" value="offline">
+                    <label for="offline">Offline</label>
+                </p>
 
                 <h3>Skills You Already Know</h3>
 
-                <input type="checkbox" id="html" name="skills" value="html">
-                <label for="html">HTML</label>
+                <p>
+                    <input type="checkbox" id="skill-html" name="skills" value="html">
+                    <label for="skill-html">HTML</label>
 
-                <input type="checkbox" id="css" name="skills" value="css">
-                <label for="css">CSS</label>
+                    <input type="checkbox" id="skill-css" name="skills" value="css">
+                    <label for="skill-css">CSS</label>
 
-                <input type="checkbox" id="javascript" name="skills" value="javascript">
-                <label for="javascript">JavaScript</label>
+                    <input type="checkbox" id="skill-javascript" name="skills" value="javascript">
+                    <label for="skill-javascript">JavaScript</label>
 
-                <input type="checkbox" id="python" name="skills" value="python">
-                <label for="python">Python</label>
+                    <input type="checkbox" id="skill-python" name="skills" value="python">
+                    <label for="skill-python">Python</label>
+                </p>
 
-                <br><br>
-
-                <input type="submit" value="Submit">
-                <input type="reset" value="Reset">
+                <p>
+                    <input type="submit" value="Submit" class="submit-btn">
+                    <input type="reset" value="Reset" class="reset-btn">
+                </p>
 
             </form>
         </section>
@@ -196,4 +210,3 @@
 
 </body>
 </html>
-
