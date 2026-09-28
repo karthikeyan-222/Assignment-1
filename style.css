@@ -1,270 +1,140 @@
-:root {
-    --navy: #0f2742;
-    --blue: #1d5fa8;
-    --teal: #16897b;
-    --amber: #f5b335;
-    --bg: #f2f5f9;
-    --card: #ffffff;
-    --text: #26323f;
-    --muted: #5d6b7a;
-    --border: #d9e1ea;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    margin: 0;
-    background-color: var(--bg);
-    color: var(--text);
-    font-family: "Segoe UI", Roboto, Arial, sans-serif;
-    line-height: 1.6;
+    background-color: #f2f5f9;
+    color: #26323f;
+    font-family: Arial, sans-serif;
     text-align: center;
 }
-
+ 
 header {
-    background: linear-gradient(135deg, var(--navy), var(--blue));
-    padding: 28px 20px;
+    background-color: #0f2742;
+    padding: 20px;
 }
-
+ 
 h1 {
-    margin: 0;
-    color: #ffffff;
-    font-size: 2rem;
-    letter-spacing: 0.5px;
-    text-align: center;
-}
-
-nav {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6px;
-    background-color: var(--navy);
-    padding: 8px 12px;
-    border-bottom: 3px solid var(--amber);
-    box-shadow: 0 2px 8px rgba(15, 39, 66, 0.25);
-}
-
-nav a {
-    color: #dce7f3;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 10px 22px;
-    border-radius: 6px;
-    transition: background-color 0.2s, color 0.2s;
-}
-
-nav a:hover,
-nav a:focus-visible {
-    background-color: var(--blue);
     color: #ffffff;
 }
-
-main {
-    padding: 10px 0 30px;
-}
-
-section {
-    background-color: var(--card);
-    width: 85%;
-    max-width: 950px;
-    margin: 28px auto;
-    padding: 28px;
-    border: 1px solid var(--border);
-    border-top: 4px solid var(--teal);
-    border-radius: 10px;
-    box-shadow: 0 4px 14px rgba(15, 39, 66, 0.06);
-    scroll-margin-top: 70px;
-}
-
+ 
 h2 {
-    margin-top: 0;
-    color: var(--navy);
+    color: #0f6a5f;
 }
-
+ 
 h3 {
-    color: var(--blue);
-    margin: 24px 0 10px;
+    color: #1d5fa8;
 }
-
-p {
-    max-width: 65ch;
-    margin: 0 auto;
-    color: var(--muted);
+ 
+nav {
+    background-color: #1d5fa8;
+    padding: 12px;
+    border-bottom: 4px solid #f5b335;
 }
+ 
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 18px;
+    margin: 0 4px;
+}
+ 
+nav a:hover {
+    background-color: #0f2742;
+}
+ 
+section {
+    background-color: #ffffff;
+    width: 85%;
+    margin: 25px auto;
+    padding: 20px;
+    border: 1px solid #d9e1ea;
+    border-top: 4px solid #16897b;
+}
+ 
 
 table {
-    width: 100%;
-    margin: 0 auto;
+    width: 90%;
+    margin: auto;
     border-collapse: collapse;
-    background-color: var(--card);
 }
-
-th {
-    background-color: var(--blue);
+ 
+th,
+td {
+    border: 1px solid #cfd8e3;
+    padding: 10px;
+}
+ 
+thead th {
+    background-color: #1d5fa8;
     color: #ffffff;
-    font-weight: 600;
 }
-
-td,
-th {
-    padding: 12px;
-    border: 1px solid var(--border);
+ 
+tbody th {
+    background-color: #e6eef7;
+    color: #0f2742;
 }
-
-tr:nth-child(even) td {
-    background-color: #f6f9fc;
-}
-
-tr:hover td {
-    background-color: #e8f1fb;
-}
-
-.highlight {
-    color: var(--teal);
-    font-weight: 600;
-}
-
-#student-name {
-    color: var(--blue);
-    font-weight: 600;
-}
-
-a {
-    color: var(--blue);
-}
+ 
 
 ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    list-style-position: inside;
 }
-
+ 
 li {
-    background-color: #e6f4f1;
     color: #0f6a5f;
-    border: 1px solid #b8e0d9;
-    border-radius: 20px;
-    padding: 6px 18px;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 form {
-    max-width: 520px;
-    margin: 0 auto;
-    background-color: #f6f9fc;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 24px;
+    background-color: #eef5f7;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
     text-align: left;
 }
-
-form h3:first-child {
-    margin-top: 0;
-}
-
-label {
-    font-weight: 600;
-}
-
-input[type="text"],
-input[type="email"],
+ 
+input,
 select {
-    width: 100%;
-    margin: 6px 0 4px;
-    padding: 10px;
-    border: 1px solid #b9c5d2;
-    border-radius: 6px;
-    background-color: #ffffff;
-    font-size: 1rem;
-    font-family: inherit;
+    padding: 6px;
+    margin: 5px;
 }
+ 
 
-input[type="radio"],
-input[type="checkbox"] {
-    margin: 6px 4px 6px 12px;
-    accent-color: var(--teal);
+.highlight {
+    color: #1a8a3c;
+    font-weight: bold;
 }
-
-input[type="radio"]:first-of-type,
-input[type="checkbox"]:first-of-type {
-    margin-left: 0;
+ 
+.badge {
+    background-color: #f5b335;
+    color: #0f2742;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 12px;
 }
-
-input:focus,
-select:focus {
-    outline: 2px solid var(--blue);
-    outline-offset: 1px;
-    border-color: var(--blue);
-}
-
-input[type="submit"],
-input[type="reset"] {
-    padding: 10px 26px;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    margin: 8px 8px 0 0;
-    transition: background-color 0.2s;
-}
-
-input[type="submit"] {
-    background-color: var(--teal);
+ 
+.submit-btn {
+    background-color: #16897b;
     color: #ffffff;
+    padding: 8px 24px;
+    border: none;
 }
+ 
+.reset-btn {
+    background-color: #dfe6ee;
+    color: #0f2742;
+    padding: 8px 24px;
+    border: none;
+}
+ 
 
-input[type="submit"]:hover {
-    background-color: #0f6a5f;
+#student-name {
+    color: #1d5fa8;
+    font-weight: bold;
 }
-
-input[type="reset"] {
-    background-color: #e3e9f0;
-    color: var(--navy);
-}
-
-input[type="reset"]:hover {
-    background-color: #d0d9e3;
-}
+ 
 
 footer {
-    background-color: var(--navy);
-    color: #b9c9db;
-    padding: 20px;
-    border-top: 3px solid var(--amber);
-}
-
-footer p {
-    margin: 0 auto;
-    color: inherit;
-}
-
-@media (max-width: 700px) {
-    section {
-        width: 94%;
-        padding: 18px;
-    }
-
-    nav a {
-        padding: 8px 14px;
-    }
-
-    table {
-        display: block;
-        overflow-x: auto;
-    }
+    background-color: #0f2742;
+    color: #ffffff;
+    padding: 18px;
+    border-top: 4px solid #f5b335;
 }
