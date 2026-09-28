@@ -1,0 +1,87 @@
+body {
+    background-color: #f4f7fb;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #173f5f;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color: #173f5f;
+}
+
+nav {
+    background-color: #20639b;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+section {
+    background-color: white;
+    margin: 25px auto;
+    padding: 20px;
+    width: 80%;
+}
+
+table {
+    background-color: white;
+    margin: auto;
+    width: 80%;
+}
+
+th {
+    background-color: #3caea3;
+    color: white;
+}
+
+td,
+th {
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.highlight {
+    color: #168a72;
+}
+
+#student-name {
+    color: #20639b;
+}
+
+form {
+    background-color: #eef5f7;
+    padding: 20px;
+}
+
+h3 {
+    color: #173f5f;
+}
+
+input,
+select {
+    margin: 5px;
+}
+
+footer {
+    background-color: #173f5f;
+    color: white;
+    padding: 15px;
+}
